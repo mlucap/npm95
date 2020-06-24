@@ -1,0 +1,22 @@
+{
+  "name": "npm95",
+  "version": "1.0.0",
+  "description": "Vaporwave aesthetic text",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mlucap/npm95.git"
+  },
+  "keywords": [
+    "vaporwave"
+  ],
+  "author": "LucaP",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mlucap/npm95/issues"
+  },
+  "homepage": "https://github.com/mlucap/npm95#readme"
+}

@@ -1,6 +1,6 @@
 {
   "name": "npm95",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Turns regular text into vaporwave styled text. Also turns vaporwave text back into regualr style text.",
   "main": "index.js",
   "scripts": {

@@ -1,31 +1,5 @@
-
-module.exports = (str) => {
-    str = str.replace(/A/gi, 'Ａ');
-    str = str.replace(/B/gi, 'Ｂ');
-    str = str.replace(/C/gi, 'Ｃ');
-    str = str.replace(/D/gi, 'Ｄ');
-    str = str.replace(/E/gi, 'Ｅ');
-    str = str.replace(/F/gi, 'Ｆ');
-    str = str.replace(/G/gi, 'Ｇ');
-    str = str.replace(/H/gi, 'Ｈ');
-    str = str.replace(/I/gi, 'Ｉ');
-    str = str.replace(/J/gi, 'Ｊ');
-    str = str.replace(/K/gi, 'Ｋ');
-    str = str.replace(/L/gi, 'Ｌ');
-    str = str.replace(/M/gi, 'Ｍ');
-    str = str.replace(/N/gi, 'Ｎ');
-    str = str.replace(/O/gi, 'Ｏ');
-    str = str.replace(/P/gi, 'Ｐ');
-    str = str.replace(/Q/gi, 'Ｑ');
-    str = str.replace(/R/gi, 'Ｒ');
-    str = str.replace(/S/gi, 'Ｓ');
-    str = str.replace(/T/gi, 'Ｔ');
-    str = str.replace(/U/gi, 'Ｕ');
-    str = str.replace(/V/gi, 'Ｖ');
-    str = str.replace(/W/gi, 'Ｗ');
-    str = str.replace(/X/gi, 'Ｘ');
-    str = str.replace(/Y/gi, 'Ｙ');
-    str = str.replace(/Z/gi, 'Ｚ');
-    str = str.replace(/ /gi, '　');
-    str = str.replace(/!/gi, '！');
-};
+module.exports = input => {
+    return input.replace(/[a-zA-Z0-9!\?\.'";:\]\[}{\)\(@#\$%\^&\*\-_=\+`~><]/g, 
+    (c) => String.fromCharCode(0xFEE0 + c.charCodeAt(0))).replace(/ /g, '　') 
+    
+}
